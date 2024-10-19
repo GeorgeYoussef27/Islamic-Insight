@@ -17,8 +17,8 @@ The **Islamic App** is designed to enhance the spiritual experiences of users by
 
 ### 4. Live Radio
 - **Streaming Lectures**: Listen to live Islamic lectures and Quran recitations, enriching the spiritual experience.
-  
-- ### 5. Multilingual Support
+
+### 5. Multilingual Support
 - **Languages**: The app is available in both **Arabic** and **English**, allowing users to select their preferred language.
 
 ### 6. Dark and Light Modes
