@@ -28,5 +28,7 @@ The **Islamic App** is designed to enhance the spiritual experiences of users by
 - **Flutter**: For cross-platform mobile application development.
 - **Dart**: The programming language used for app development.
 - **Firebase**: For backend services and data storage.
+- **Provider**: For state management.
+- **APIs**: For retrieving dynamic data.
 - **Git**: Version control for source code management.
 - **Figma/Adobe XD**: For UI/UX design.
