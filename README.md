@@ -1,16 +1,26 @@
-# islamy_app
+# Islamic App
 
-A new Flutter project.
+## Overview
+The **Islamic App** is designed to enhance the spiritual experiences of users by providing access to essential Islamic resources. The application features the Surahs of the Quran, along with the number of verses in each, a collection of Hadiths, a digital tasbih for dhikr, and a live radio feature for streaming Islamic lectures and Quran recitations.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+### 1. Quran Surahs
+- **Access to Surahs**: Browse through all Surahs of the Quran.
+- **Verse Counts**: View the number of verses in each Surah for better engagement.
 
-A few resources to get you started if this is your first Flutter project:
+### 2. Hadith Collection
+- **Curated Selection**: A compilation of authentic Hadiths to deepen understanding of Islamic teachings.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### 3. Digital Tasbih
+- **Engagement in Dhikr**: A user-friendly digital tasbih feature that facilitates remembrance of Allah.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 4. Live Radio
+- **Streaming Lectures**: Listen to live Islamic lectures and Quran recitations, enriching the spiritual experience.
+
+## Technologies Used
+- **Flutter**: For cross-platform mobile application development.
+- **Dart**: The programming language used for app development.
+- **Firebase**: For backend services and data storage.
+- **Git**: Version control for source code management.
+- **Figma/Adobe XD**: For UI/UX design.
