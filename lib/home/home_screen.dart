@@ -3,8 +3,10 @@ import 'package:islamy_app/Tabs/AhadethTab.dart';
 import 'package:islamy_app/Tabs/QuranTab.dart';
 import 'package:islamy_app/Tabs/SebhaTab.dart';
 import 'package:islamy_app/Tabs/SettingsTab.dart';
+import 'package:islamy_app/providers/settingsProvider.dart';
 import 'package:islamy_app/style/AppStyle.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
 
 import '../Tabs/RadioTab.dart';
 
@@ -27,10 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
 //how to hide statue bar in android
   @override
   Widget build(BuildContext context) {
+    SettingsProvider provider = Provider.of<SettingsProvider>(context);
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage(AppStyle.isDark
+              image: AssetImage(provider.themeMode == ThemeMode.dark
                   ?"assets/images/home_dark_background.png"
                   :"assets/images/background.png"),
               fit: BoxFit.fill)),

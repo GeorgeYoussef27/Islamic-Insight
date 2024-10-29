@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islamy_app/home/ThemeBottomSheet.dart';
+import 'package:islamy_app/providers/settingsProvider.dart';
+import 'package:provider/provider.dart';
 
 import '../home/LanguageButtomSheet.dart';
 
@@ -8,6 +10,7 @@ class SettingsTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SettingsProvider provider = Provider.of<SettingsProvider>(context);
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: Column(
@@ -32,8 +35,9 @@ class SettingsTab extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   border:
                       Border.all(color: Theme.of(context).colorScheme.onPrimaryContainer)),
-              child: Text(
-                "English",
+              child: Text( provider.language == "en"
+                  ? "English"
+                  : "العربية",
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontSize: 18,
                 ),
@@ -62,8 +66,9 @@ class SettingsTab extends StatelessWidget {
                   borderRadius: BorderRadius.circular(10),
                   border:
                       Border.all(color: Theme.of(context).colorScheme.onPrimaryContainer)),
-              child: Text(
-                "Dark",
+              child: Text( provider.themeMode == ThemeMode.dark
+                  ?"Dark"
+                  :"Light",
                 style: Theme.of(context).textTheme.bodySmall?.copyWith(
                   fontSize: 18,
                 ),
