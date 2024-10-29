@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         Locale('en'),
         Locale('ar'),
       ],
-      locale: Locale('ar'),
+      locale: Locale('en'),
       debugShowCheckedModeBanner: false,
       title: 'Islamy',
       theme: AppStyle.lighTheme,
