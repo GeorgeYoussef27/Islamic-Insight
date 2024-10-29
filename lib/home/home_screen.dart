@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:islamy_app/Tabs/AhadethTab.dart';
 import 'package:islamy_app/Tabs/QuranTab.dart';
 import 'package:islamy_app/Tabs/SebhaTab.dart';
+import 'package:islamy_app/Tabs/SettingsTab.dart';
+import 'package:islamy_app/style/AppStyle.dart';
 
 import '../Tabs/RadioTab.dart';
 
@@ -19,6 +21,7 @@ class _HomeScreenState extends State<HomeScreen> {
     AhadethTab(),
     SebhaTab(),
     RadioTab(),
+    SettingsTab(),
   ];
 //how to hide statue bar in android
   @override
@@ -26,7 +29,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Container(
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/background.png"),
+              image: AssetImage(AppStyle.isDark
+                  ?"assets/images/home_dark_background.png"
+                  :"assets/images/background.png"),
               fit: BoxFit.fill)),
       child: Scaffold(
         backgroundColor: Colors.transparent,
@@ -61,6 +66,11 @@ class _HomeScreenState extends State<HomeScreen> {
             backgroundColor: Theme.of(context).colorScheme.primary,
             icon: ImageIcon(AssetImage("assets/images/radio.png")),
             label: "Radio",
+          ),
+          BottomNavigationBarItem(
+            backgroundColor: Theme.of(context).colorScheme.primary,
+            icon: Icon(Icons.settings),
+            label: "Settings",
           ),
         ]
         ),
