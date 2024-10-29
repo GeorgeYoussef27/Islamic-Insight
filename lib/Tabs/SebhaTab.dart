@@ -56,7 +56,7 @@ class SebhaTabState extends State<SebhaTab> {
         ),
         Text(
           "عدد التسبيحات",
-          style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600),
+          style: TextStyle(fontSize: 25, fontWeight: FontWeight.w600,color: Theme.of(context).colorScheme.onSecondaryContainer),
         ),
         SizedBox(height: 30),
         Stack(
@@ -91,7 +91,7 @@ class SebhaTabState extends State<SebhaTab> {
               child: Text(
                 Azkar[currentZekrIndex],
                 style: TextStyle(
-                    fontSize: 25, fontWeight: FontWeight.w400, color: Colors.white),
+                    fontSize: 25, fontWeight: FontWeight.w400, color: Theme.of(context).colorScheme.onSecondaryContainer),
               )),
         )
       ],

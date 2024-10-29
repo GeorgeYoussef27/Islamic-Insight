@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppStyle{
-  static bool isDark = false;
+  static bool isDark = true;
   static const Color lightPrimary = Color(0xffB7935F);
   static const Color darkPrimary = Color(0xff141A2E);
   static const Color darkSecondary = Color(0xffFACC1D);
@@ -59,6 +59,7 @@ class AppStyle{
         onPrimary: Colors.white,
         onSecondary: Colors.black,
         onPrimaryContainer: lightPrimary,
+        onSecondaryContainer: Colors.black,
       ),
       useMaterial3: true,
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
@@ -127,7 +128,8 @@ class AppStyle{
         secondary: darkSecondary,
         onPrimary: Colors.white,
         onSecondary: Colors.black,
-        onPrimaryContainer: darkSecondary
+        onPrimaryContainer: darkSecondary,
+        onSecondaryContainer: Colors.white,
       ),
       useMaterial3: true,
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
