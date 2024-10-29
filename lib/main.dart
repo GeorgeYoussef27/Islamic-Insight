@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:islamy_app/ahadeth_details/ahadeth_details_screen.dart';
 import 'package:islamy_app/home/home_screen.dart';
 import 'package:islamy_app/quran_details/quran_details_screen.dart';
 import 'package:islamy_app/style/AppStyle.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 void main() {
 
@@ -17,6 +19,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
     return MaterialApp(
+      localizationsDelegates: [
+        AppLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: [
+        Locale('en'),
+        Locale('ar'),
+      ],
+      locale: Locale('ar'),
       debugShowCheckedModeBanner: false,
       title: 'Islamy',
       theme: AppStyle.lighTheme,
