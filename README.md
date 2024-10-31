@@ -1,4 +1,4 @@
-# Islamic App
+# Islamic Insight
 
 ## Overview
 The **Islamic App** is designed to enhance the spiritual experiences of users by providing access to essential Islamic resources. The application features the Surahs of the Quran, along with the number of verses in each, a collection of Hadiths, a digital tasbih for dhikr, and a live radio feature for streaming Islamic lectures and Quran recitations.
